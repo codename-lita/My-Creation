@@ -1,0 +1,81 @@
+body {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px;
+}
+h1 {
+  font-family: Arial Rounded MT;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 80px;
+  text-align: center;
+  color: orange;
+  padding: 30px 0;
+}
+h2 {
+  font-family: Comfortaa, "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.bar {
+  font-family: Comfortaa, "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+.Houston {
+  color: orange;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.weather {
+  font-weight: 900;
+  font-size: 25px;
+}
+.fa-cloud-bolt,
+.fa-cloud-rain,
+.fa-cloud,
+.fa-cloud-sun {
+  font-size: 100px;
+  padding: 70px 0;
+}
+.bolt1 {
+  font-size: 100px;
+  padding: 10px 0;
+}
+.temp {
+  font-size: 90px;
+}
+.temp-unit {
+  font-weight: 900;
+  font-size: 40px;
+}
+.conditions,
+.highTemp {
+  font-weight: 900;
+}
+
+p {
+  text-align: center;
+  font-family: Comfortaa;
+  font-size: 35px;
+  color: rgba(238, 16, 16, 0.815);
+  font-weight: 900;
+  padding: 20px 0;
+}
+hr {
+  border: none;
+  border-top: 3px solid black;
+  margin: 0 80px;
+}
+.col {
+  font-family: comfortaa;
+  font-size: 23px;
+  padding-bottom: 30px;
+}
+.days {
+  color: turquoise;
+  font-weight: 900;
+  text-decoration-line: underline;
+}

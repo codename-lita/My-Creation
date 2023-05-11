@@ -1,20 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/12b0348107.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-<body>
-  <h1>Hello Git</h1>
-  <form>
-    <input type="email" placeholder="Enter your email"/>
-    <input type="password" placeholder="Enter your password"/>
-    <input type="submit" value="Login" />
-  </form>
-  <script src="script.js"></script>
-</body>
+  <body>
+    <div class="container">
+      <h1>Weather</h1>
+      <br />
+      <div class="weather-app">
+        <h2>
+          <div class="row">
+            <div class="col-7">
+              <form class="d-flex" role="search" id="search-form">
+                <input
+                  class="form-control me-2"
+                  style="width: 80%;"
+                  type="search"
+                  placeholder="Search for any City"
+                  aria-label="Search"
+                  id="search-text-input"
+                />
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+            </div>
+            <div class="col-2">
+              <button class="btn btn-secondary current-location-btn">Current Location</button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-success">Compare to other City</button>
+            </div>
+          </div>
+        </h2>
+      </div>
+      <br />
+      <div class="container text-center bar">
+        <div class="row">
+          <div class="col">
+            <span class="Houston"> HOUSTON, TX USA </span>
+            <br />
+            <span class="currentDayTime"> Thursday -- 10:07 </span>
+            <br />
+            <span class="weather">Thunderstorms </span>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-cloud-bolt bolt1"></i>
+          </div>
+          <div class="col">
+            <span class="temp"> 60</span>
+            <sup style="vertical-align: 30px">
+            <span class="temp-unit">
+              °F
+              </sup>
+            </span>
+          </div>
+          <div class="col">
+            <span class="conditions">Humidity:</span> 
+            <span class="humidity"> 74% </span>
+            <br />
+            <span class="conditions">Wind:</span> 
+            <span class="wind"> 23 miles/hour </span>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+   
+    <script src="src/index.js"></script>
+  </body>
 </html>
