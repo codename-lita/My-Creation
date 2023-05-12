@@ -46,6 +46,7 @@ function showWeatherConditions(response) {
   let currentWeatherCondition = document.querySelector(".weather");
   currentWeatherCondition.innerHTML = `${weatherCondition}`;
 }
+
 // function for current location
 function currentPosition(position) {
   let longitude = position.coords.longitude;

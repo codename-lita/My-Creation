@@ -1,7 +1,8 @@
 body {
-  border: 3px solid black;
-  border-radius: 10px;
-  margin: 80px 250px 80px;
+  border: 3px solid darksalmon;
+  border-radius: 20px;
+  margin: 80px 350px 80px;
+  background-color: rgb(194, 224, 194);
 }
 h1 {
   font-family: Arial Rounded MT;
@@ -9,7 +10,7 @@ h1 {
   font-weight: 900;
   line-height: 80px;
   text-align: center;
-  color: orange;
+  color: darksalmon;
   padding: 30px 0;
 }
 h2 {
@@ -24,8 +25,8 @@ h2 {
   padding-top: 20px;
 }
 .Houston {
-  color: orange;
-  font-size: 25px;
+  color: darksalmon;
+  font-size: 35px;
   font-weight: 900;
 }
 
@@ -55,19 +56,23 @@ h2 {
 .highTemp {
   font-weight: 900;
 }
+#search-form {
+  padding-left: 50px;
+}
 
 p {
   text-align: center;
   font-family: Comfortaa;
   font-size: 35px;
-  color: rgba(238, 16, 16, 0.815);
+  color: black;
   font-weight: 900;
   padding: 20px 0;
 }
 hr {
-  border: none;
-  border-top: 3px solid black;
-  margin: 0 80px;
+  border-top: 2px solid black;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .col {
   font-family: comfortaa;
@@ -75,7 +80,25 @@ hr {
   padding-bottom: 30px;
 }
 .days {
-  color: turquoise;
+  color: darksalmon;
   font-weight: 900;
   text-decoration-line: underline;
+}
+footer {
+  text-align: center;
+  font-family: comfortaa;
+  font-size: 18px;
+}
+.blue-button {
+  background-color: darksalmon;
+  border-color: darksalmon;
+}
+.green-button {
+  background-color: darkseagreen;
+  border-color: darkseagreen;
+}
+.whole-container,
+.container,
+.col {
+  background-color: rgb(253, 253, 250);
 }
