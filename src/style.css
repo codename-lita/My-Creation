@@ -1,6 +1,5 @@
 body {
-  border: 3px solid darksalmon;
-  border-radius: 20px;
+  
   margin: 80px 350px 80px;
   background-color: rgb(194, 224, 194);
 }
@@ -32,7 +31,8 @@ h2 {
 
 .weather {
   font-weight: 900;
-  font-size: 25px;
+  font-size: 35px;
+  color: darksalmon;
 }
 .fa-cloud-bolt,
 .fa-cloud-rain,
@@ -98,7 +98,17 @@ footer {
   border-color: darkseagreen;
 }
 .whole-container,
-.container,
-.col {
+.container {
   background-color: rgb(253, 253, 250);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.5);
+}
+.forecast {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.5);
+}
+.city-container {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }

@@ -87,7 +87,7 @@ searchForm.addEventListener("submit", searchButton);
 // function to update current location and city weather stats together
 function showData(response) {
   let searchCityResult = document.querySelector(".Houston");
-  searchCityResult.innerHTML = response.data.name;
+  searchCityResult.innerHTML = `${response.data.name}, ${response.data.sys.country}`;
 
   let currentTime = new Date();
   let currentDateTime = formatDate(currentTime);
