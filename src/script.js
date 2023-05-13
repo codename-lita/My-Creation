@@ -42,9 +42,18 @@ function showWind(response) {
 }
 
 function showWeatherConditions(response) {
-  let weatherCondition = response.data.weather[0].main;
+  let weatherCondition = response.data.weather[0].description;
   let currentWeatherCondition = document.querySelector(".weather");
   currentWeatherCondition.innerHTML = `${weatherCondition}`;
+}
+function showWeatherIcon(response) {
+  let weatherIcon = response.data.weather[0].icon;
+  let weatherElement = document.querySelector("#icon");
+  weatherElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+  );
+  weatherElement.setAttribute("alt", response.data.weather[0].icon);
 }
 
 // function for current location
@@ -97,6 +106,7 @@ function showData(response) {
   showHumidity(response);
   showWind(response);
   showWeatherConditions(response);
+  showWeatherIcon(response);
 }
 
 searchWithCity("Houston");
