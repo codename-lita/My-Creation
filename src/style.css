@@ -1,12 +1,13 @@
 body {
-  margin: 80px 350px 80px;
-  background-color: rgb(194, 224, 194);
+  margin: 40px 350px 80px;
+  background-color: rgb(207, 226, 207);
+  color: #626263;
 }
 h1 {
   font-family: Arial Rounded MT;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
-  line-height: 80px;
+  line-height: 50px;
   text-align: center;
   color: darksalmon;
   padding: 30px 0;
@@ -29,34 +30,43 @@ h2 {
 }
 .currentDayTime {
   font-weight: 900;
+  font-size: 25px;
 }
 
 .weather {
   font-weight: 900;
   font-size: 35px;
   color: darksalmon;
+  line-height: normal;
 }
 .fa-cloud-bolt,
 .fa-cloud-rain,
 .fa-cloud,
 .fa-cloud-sun {
   font-size: 100px;
-  padding: 70px 0;
+  padding: 50px 0;
 }
 #icon {
-  width: 150px;
- 
+  width: 175px;
+
 }
 .temp {
-  font-size: 90px;
+  font-size: 110px;
 }
 .temp-unit {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 20px;
 }
-.conditions,
+#fareinheit-link, #celcius-link {
+  color: #626263;
+  text-decoration: none;
+}
+.conditions {
+  font-weight: 900;
+}
 .highTemp {
   font-weight: 900;
+  color: darksalmon;
 }
 #search-form {
   padding-left: 50px;
@@ -66,7 +76,7 @@ p {
   text-align: center;
   font-family: Comfortaa;
   font-size: 35px;
-  color: black;
+  color: darksalmon;
   font-weight: 900;
   padding: 20px 0;
 }
@@ -82,7 +92,7 @@ hr {
   padding-bottom: 30px;
 }
 .days {
-  color: darksalmon;
+  color:#73757b;
   font-weight: 900;
   text-decoration-line: underline;
 }

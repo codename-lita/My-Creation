@@ -21,7 +21,7 @@
 
   <body>
     <div class="whole-container">
-      <h1>Weather</h1>
+      <h1></h1>
       <br />
       <div class="weather-app">
         <h2>
@@ -32,7 +32,7 @@
                   class="form-control me-2"
                   style="width: 80%;"
                   type="search"
-                  placeholder="Search for any City"
+                  placeholder="Search for a City"
                   aria-label="Search"
                   id="search-text-input"
                 />
@@ -52,9 +52,11 @@
       <div class="container text-center bar city-container">
         <div class="row">
           <div class="col">
-            <span class="Houston"> HOUSTON, TX USA </span>
+            <br/>
+            <span class="Houston"> HOUSTON, US </span>
             <br />
-            <span class="currentDayTime"> Thursday -- 10:07 </span>
+            
+            <span class="currentDayTime"> Thursday 10:07 </span>
             <br />
             
           </div>
@@ -63,9 +65,10 @@
           </div>
           <div class="col">
             <span class="temp"> 60</span>
-            <sup style="vertical-align: 30px">
+            <sup style="vertical-align: 55px">
             <span class="temp-unit">
-              °F
+              <a href="#" id="fareinheit-link">°F</a> |
+                <a href="#" id="celcius-link">°C</a>
               </sup>
             </span>
           </div>
@@ -81,7 +84,7 @@
           </div>
           <div class="hr-line">
             <hr />
-            <p>5 Day Weather Forecast</p>
+            <p>5 Day Forecast</p>
           </div>
         </div>
       </div>
@@ -93,7 +96,7 @@
           <br />
           <i class="fa-solid fa-cloud-rain"></i>
           <br />
-          <span class="highTemp">H: 61°</span>
+          <span class="highTemp">H: 61°F</span>
           <br />
           L: 56°F
         </div>

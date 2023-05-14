@@ -27,6 +27,24 @@ function showTemperature(response) {
   let currentTemp = Math.round(response.data.main.temp);
   let currentLocationTemp = document.querySelector(".temp");
   currentLocationTemp.innerHTML = `${currentTemp}`;
+  let fUnitLink = document.querySelector("#fareinheit-link");
+  fUnitLink.addEventListener("click", fareinheit);
+  let cUnitLink = document.querySelector("#celcius-link");
+  cUnitLink.addEventListener("click", celcius);
+
+  function fareinheit(event) {
+    event.preventDefault();
+    let fLinkTemp = document.querySelector(".temp");
+    let fTemp = Math.round(response.data.main.temp);
+    fLinkTemp.innerHTML = `${fTemp}`;
+  }
+
+  function celcius(event) {
+    event.preventDefault();
+    let cLinkTemp = document.querySelector(".temp");
+    let cTemp = Math.round((response.data.main.temp - 32) * (5 / 9));
+    cLinkTemp.innerHTML = `${cTemp}`;
+  }
 }
 
 function showHumidity(response) {
